@@ -116,7 +116,7 @@ const Servo = () => {
             <div id="responses">
                 {responses.map((response, index) => {
                     const userPrompt = response[0];
-                    const servoSays = response[1].split('\n').slice(2);
+                    const servoSays = response[1].split('\n');
                     return (
                     <div className="response-box" key={`response-${index}`}>
                         <div className="user-prompt">
@@ -131,8 +131,12 @@ const Servo = () => {
                             </div>
                             {servoSays.map((line, index) => (
                                 <div className="line" id={`line-${index}`}>
-                                    {line}
-                                    <br />
+                                    {line && (
+                                        <>
+                                            {line}
+                                            <br />
+                                        </>
+                                    )}
                                 </div>
                             ))}
                         </div>
