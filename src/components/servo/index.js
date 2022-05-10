@@ -16,7 +16,6 @@ const Servo = () => {
     }, []);
 
     useEffect(() => {
-        console.log(responses);
         if (responses.length) {
             sessionStorage.setItem("responses", JSON.stringify(responses));
         }
@@ -35,18 +34,14 @@ const Servo = () => {
                 },
                 body: JSON.stringify(query)
             });
-            console.log(response);
             if (response.ok) {
                 const newResponse = await response.json();
-                console.log(newResponse);
                 const answer = [query.prompt, newResponse.choices[0].text];
-                console.log(answer);
                 setResponses([answer, ...responses]);
                 setPrompt('');
                 setQuery({});
             } else if (response.status < 500) {
                 const data = await response.json();
-                console.log(data);
                 if (data.error) {
                     setErrors([data.error.message]);
                 }
