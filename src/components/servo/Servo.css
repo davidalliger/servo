@@ -1,22 +1,37 @@
+html, body, #root {
+    min-height: 100%;
+    color: #144a50;
+    background-color: #e0f4f3;
+    padding: 20px 0 20px 0;
+    box-sizing: border-box;
+}
+
 #servo {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: 20px 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100%;
+    box-sizing: border-box;
 }
 
 #servo-icon {
     font-size: 100px;
     margin: 10px;
+    color: #1c8063;
+    /* box-shadow: 5px 5px 5px #2633366a; */
 }
 
 h1 {
     margin: 10px;
+    font-family: 'Press Start 2P', sans-serif;
 }
 
 h2 {
     margin: 0;
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 16px;
 }
 
 .bold {
@@ -26,9 +41,11 @@ h2 {
 #instructions {
     width: 75%;
     padding: 20px 30px;
-    background-color: aliceblue;
+    background-color: #ffffff;
+    color: #144a50;
     box-sizing: border-box;
     margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 #instructions p {
@@ -39,24 +56,84 @@ h2 {
     margin-bottom: 0;
 }
 
+#instructions li {
+    margin-top: 10px;
+}
+
 #form {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #label {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 100%;
+    width: 75%;
 }
 
 #textarea {
     resize: none;
-    width: 75%;
+    width: 100%;
     height: 100px;
     box-sizing: border-box;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    font-family: sans-serif;
+}
+
+#button-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #button {
     margin-top: 20px;
+    border: none;
+    background-color: #1c8063;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+#button:hover {
+    background-color: #1f5243;
+}
+
+.error {
+    color: red;
+    margin: 10px;
+}
+
+#responses {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.response-box {
+    width: 75%;
+    box-sizing: border-box;
+    padding: 25px;
+    background-color: #ffffff;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+.servo-says {
+    margin-top: 15px;
+}
+
+.response-label {
+    font-weight: bold;
+    margin-bottom: 8px;
 }
