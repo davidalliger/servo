@@ -60,3 +60,22 @@ h2 {
 #button {
     margin-top: 20px;
 }
+
+.error {
+    color: red;
+    margin: 5px;
+}
+
+#responses {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.response-box {
+    width: 75%;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: aliceblue;
+}
