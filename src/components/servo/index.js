@@ -89,7 +89,7 @@ const Servo = () => {
                 onSubmit={handleSubmit}
             >
                 <label id="label"
-                    for="textarea"
+                    htmlFor="textarea"
                 >
                     Prompt:
                     <textarea
