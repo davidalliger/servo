@@ -124,7 +124,7 @@ function App() {
                           Servo Says:
                       </div>
                       {servoSays.map((line, index) => (
-                          <div className="line" id={`line-${index}`}>
+                          <div className="line" id={`line-${index}`} key={index}>
                               {line && (
                                   <>
                                       {line}
