@@ -4,7 +4,7 @@ Servo is a robot butler that can respond to text prompts. A user can enter a pro
 
 ## Implementation
 
-Servo utilizes the public API for OpenAI's powerful AI model, GPT-3. The client sent a POST request to the API, and the API return's Servo's response. The application was built using the React frontend library. The App component contains a form with a controlled input, which updates certain stateful variables. When the form is submitted, a fetch request with a method of "POST" is sent to the external API, and the response gets recorded and displayed below.
+Servo utilizes the public API for OpenAI's powerful AI model, GPT-3. The client sends a POST request to the API, and the API return's Servo's response. The application was built using the React frontend library. The App component contains a form with a controlled text input, which updates certain stateful variables on change. When the form is submitted, a fetch request with a method of "POST" is sent to the external API, and the response gets recorded and displayed below the form.
 
 ![servo-3](https://user-images.githubusercontent.com/88861592/167978396-caedcbed-4443-4f8a-aa2d-516b90918890.PNG)
 
