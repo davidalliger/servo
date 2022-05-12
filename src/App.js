@@ -67,7 +67,7 @@ function App() {
     <div id="servo">
       <i id="servo-icon" className="fa-solid fa-robot"></i>
       <h1>Servo</h1>
-      <h2>The Robot Butler!</h2>
+      <h2>The Robot Butler</h2>
       <p><span className='bold'>Servo Says:</span> How may I assist you today?</p>
       <div id="instructions">
           <p>Some examples of things you can ask Servo to do are:</p>
