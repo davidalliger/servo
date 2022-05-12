@@ -1,70 +1,23 @@
-# Getting Started with Create React App
+# Servo: The Robot Butler
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Servo is a robot butler that can respond to text prompts. A user can enter a prompt into the text field and hit submit to send a request to Servo. The user's prompts and Servo's responses are displayed list-style underneath.
 
-## Available Scripts
+## Implementation
 
-In the project directory, you can run:
+Servo utilizes the public API for OpenAI's powerful AI model, GPT-3. The client sent a POST request to the API, and the API return's Servo's response. The application was built using the React frontend library. The App component contains a form with a controlled input, which updates certain stateful variables. When the form is submitted, a fetch request with a method of "POST" is sent to the external API, and the response gets recorded and displayed below.
 
-### `npm start`
+![servo-3](https://user-images.githubusercontent.com/88861592/167978396-caedcbed-4443-4f8a-aa2d-516b90918890.PNG)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![servo-2](https://user-images.githubusercontent.com/88861592/167978424-cc92ec25-ad7d-418e-954c-c84354c0231d.PNG)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![servo-1](https://user-images.githubusercontent.com/88861592/167978452-30b5c660-965a-467f-ade5-d9d6d0734159.PNG)
 
-### `npm test`
+## Screenshots
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![servo-4](https://user-images.githubusercontent.com/88861592/167979044-1ca70254-fa8a-4d94-b299-316f97520111.PNG)
 
-### `npm run build`
+![servo-5](https://user-images.githubusercontent.com/88861592/167979084-58165b5f-fe23-4c86-96b7-faede5bf36a1.PNG)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Possible Future Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+In the future, it would be neat to create a backend for the application with a database and user authentication. That way, people could sign up for an account and log in whenever they want to view their exchanges with Servo.
