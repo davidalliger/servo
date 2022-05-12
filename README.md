@@ -1,6 +1,6 @@
 # Servo: The Robot Butler
 
-Servo is a robot butler that can respond to text prompts. A user can enter a prompt into the text field and hit submit to send a request to Servo. The user's prompts and Servo's responses are displayed list-style underneath.
+[Servo](https://servo-robot-butler.herokuapp.com) is a robot butler that can respond to text prompts. A user can enter a prompt into the text field and hit submit to send a request to Servo. The user's prompts and Servo's responses are displayed list-style underneath.
 
 ## Implementation
 
